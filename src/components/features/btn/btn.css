@@ -1,0 +1,23 @@
+#btn{
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 0 8px rgb(207, 207, 207);
+}
+
+
+ #btn{
+  position: relative;
+  top: 15px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: none;
+  padding: 15px;
+  border-radius: 15%;
+  box-shadow: 0 0 8px #d9d4e7;
+  width: 15vw;
+  height: 10vh;
+  background-color: #d9d4e7;
+  animation-duration: 5s;
+}

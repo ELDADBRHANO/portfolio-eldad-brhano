@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { Home,NotFound,About,Contact } from "./components/pages";
+
 function Routing() {
   return (
     <Routes>
