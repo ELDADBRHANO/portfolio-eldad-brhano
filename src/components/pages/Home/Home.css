@@ -5,13 +5,13 @@
   animation-duration: 4s;
 }
 
-
+/* 
 .eldad-present {
   position: relative;
   color: hsl(0, 0%, 68%);
   font-weight: bold!important;
   font-family: "Anonymous Pro", monospace!important;
-  letter-spacing: 7px!important;
+  letter-spacing: 3px!important;
   overflow: hidden;
   white-space: nowrap;
   animation: typewriter 4s steps(44) 1s 1 normal both,
@@ -33,7 +33,7 @@
   to {
     border-right-color: transparent;
   }
-}
+} */
 
 
 #contact-btn{
@@ -73,3 +73,45 @@
 
 
 
+ 
+
+
+
+  .pop-outin {
+    animation: 2s anim-popoutin ease infinite;
+  }
+  
+  @keyframes anim-popoutin {
+    0% {
+      color: black;
+      transform: scale(0);
+      opacity: 0;
+      text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+    25% {
+      color: red;
+      transform: scale(2);
+      opacity: 1;
+      text-shadow: 3px 10px 5px rgba(0, 0, 0, 0.5);
+    }
+    50% {
+      color: black;
+      transform: scale(1);
+      opacity: 1;
+      text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      /* animate nothing to add pause at the end of animation */
+      transform: scale(1);
+      opacity: 1;
+      text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
+    }
+  }
+
+
+
+
+
+
+
+  
