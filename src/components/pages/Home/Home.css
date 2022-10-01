@@ -77,7 +77,7 @@
 
 
 
-  .pop-outin {
+  /* .pop-outin {
     animation: 5s anim-popoutin;
   }
   
@@ -102,11 +102,49 @@
     }
     100% {
       /* animate nothing to add pause at the end of animation */
-      transform: scale(1);
+      /* transform: scale(1);
       opacity: 1;
       text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
     }
+  } */
+ 
+
+
+
+
+
+
+ .wrapper {
+  /* height: 100vh; */
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
+}
+
+.typing-hello {
+  width: 13vw;
+  animation: typing 2s steps(22), blink .5s  step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    border-right: 3px solid;
+      width: 0
+    }
+    to{
+    border-right: 0px solid;
+    }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
   }
+}
 
 
 
@@ -114,4 +152,158 @@
 
 
 
+.typing {
+  width: 30vw;
+  animation: typingDem 4s steps(22), blink .5s step-end infinite alternate ;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typingDem {
+  from {
+    border-right: 3px solid;
+      width: 0
+    }
+    to{
+    border-right: 0px solid;
+    }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+
+
+
+
+
+.typing-developer {
+  width: 47vw;
+  animation: typingDeveloper 6s steps(26), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typingDeveloper {
+  from {
+  border-right: 3px solid;
+    width: 0
+  }
+  to{
+  border-right: 0px solid;
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    /* height: 100vh; */
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
+  }
   
+  .typing-hello {
+    width: 22vw;
+    animation: typing 2s steps(22), blink .5s  step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typing {
+    from {
+      border-right: 3px solid;
+        width: 0
+      }
+      to{
+      border-right: 0px solid;
+      }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  .typing {
+    width: 37vw;
+    animation: typingDem 4s steps(22), blink .5s step-end infinite alternate ;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typingDem {
+    from {
+      border-right: 3px solid;
+        width: 0
+      }
+      to{
+      border-right: 0px solid;
+      }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+  
+  
+  
+  
+  
+  
+  .typing-developer {
+    width: 78vw;
+    animation: typingDeveloper 6s steps(26), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typingDeveloper {
+    from {
+    border-right: 3px solid;
+      width: 0
+    }
+    to{
+    border-right: 0px solid;
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+}
