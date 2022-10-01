@@ -1,129 +1,52 @@
-.eldad-present{
+.eldad-present {
   display: flex;
   padding: 3.5rem;
   animation-name: example;
   animation-duration: 4s;
 }
 
-/* 
-.eldad-present {
-  position: relative;
-  color: hsl(0, 0%, 68%);
-  font-weight: bold!important;
-  font-family: "Anonymous Pro", monospace!important;
-  letter-spacing: 3px!important;
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typewriter 4s steps(44) 1s 1 normal both,
-    blinkTextCursor 500ms infinite;
-}
 
-@keyframes typewriter {
-  from {
-    width: 0;
-  }
-  to {
-    width: 90vw;
-  }
-}
-@keyframes blinkTextCursor {
-  from {
-    border-right-color: hsl(0, 0%, 80%);
-  }
-  to {
-    border-right-color: transparent;
-  }
-} */
-
-
-#contact-btn{
+#contact-btn {
   background-color: #1c87c9;
-    -webkit-border-radius: 60px;
-    border-radius: 60px;
-    border: none;
-    color: #eeeeee;
-    cursor: pointer;
-    display: inline-block;
-    font-family: sans-serif;
-    font-size: 20px;
-    padding: 5px 15px;
-    text-align: center;
-    text-decoration: none;
- 
-
+  -webkit-border-radius: 60px;
+  border-radius: 60px;
+  border: none;
+  color: #eeeeee;
+  cursor: pointer;
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 20px;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
 }
-  .contact-btn {
-    animation: glowing 1300ms infinite;
+.contact-btn {
+  animation: glowing 1300ms infinite;
+}
+@keyframes glowing {
+  0% {
+    background-color: #2ba805;
+    box-shadow: 0 0 5px #2ba805;
   }
- @keyframes glowing {
-    0% {
-      background-color: #2ba805;
-      box-shadow: 0 0 5px #2ba805;
-    }
-    50% {
-      background-color: #49e819;
-      box-shadow: 0 0 20px #49e819;
-    }
-    100% {
-      background-color: #2ba805;
-      box-shadow: 0 0 5px #2ba805;
-    }
+  50% {
+    background-color: #49e819;
+    box-shadow: 0 0 20px #49e819;
   }
-
-
-
-
- 
-
-
-
-  /* .pop-outin {
-    animation: 5s anim-popoutin;
+  100% {
+    background-color: #2ba805;
+    box-shadow: 0 0 5px #2ba805;
   }
-  
-  @keyframes anim-popoutin {
-    0% {
-      color: rgb(0, 0, 0);
-      transform: scale(0);
-      opacity: 0;
-      text-shadow: 0 0 0 rgba(0, 0, 0, 0);
-    }
-    25% {
-      color: red;
-      transform: scale(2);
-      opacity: 1;
-      text-shadow: 3px 10px 5px rgba(0, 0, 0, 0.5);
-    }
-    50% {
-      color: black;
-      transform: scale(1);
-      opacity: 1;
-      text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
-    }
-    100% {
-      /* animate nothing to add pause at the end of animation */
-      /* transform: scale(1);
-      opacity: 1;
-      text-shadow: 1px 0 0 rgba(0, 0, 0, 0);
-    }
-  } */
- 
+}
 
 
-
-
-
-
- .wrapper {
-  /* height: 100vh; */
-  /*This part is important for centering*/
+.wrapper {
   display: grid;
   place-items: center;
 }
 
 .typing-hello {
   width: 13vw;
-  animation: typing 2s steps(22), blink .5s  step-end infinite alternate;
+  animation: typing 2s steps(22) , blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   font-family: monospace;
@@ -133,28 +56,22 @@
 @keyframes typing {
   from {
     border-right: 3px solid;
-      width: 0
-    }
-    to{
+    width: 0;
+  }
+  to {
     border-right: 0px solid;
-    }
-}
-    
-@keyframes blink {
-  50% {
-    border-color: transparent
   }
 }
 
-
-
-
-
-
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
 
 .typing {
   width: 30vw;
-  animation: typingDem 4s steps(22), blink .5s step-end infinite alternate ;
+  animation: typingDem 4s steps(22), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   font-family: monospace;
@@ -164,27 +81,23 @@
 @keyframes typingDem {
   from {
     border-right: 3px solid;
-      width: 0
-    }
-    to{
+    width: 0;
+  }
+  to {
     border-right: 0px solid;
-    }
-}
-    
-@keyframes blink {
-  50% {
-    border-color: transparent
   }
 }
 
-
-
-
-
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
 
 .typing-developer {
   width: 47vw;
-  animation: typingDeveloper 6s steps(26), blink .5s step-end infinite alternate;
+  animation: typingDeveloper 6s steps(26),
+    blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   font-family: monospace;
@@ -193,19 +106,32 @@
 
 @keyframes typingDeveloper {
   from {
-  border-right: 3px solid;
-    width: 0
+    border-right: 3px solid;
+    width: 0;
   }
-  to{
-  border-right: 0px solid;
+  to {
+    border-right: 0px solid;
   }
 }
-    
+
 @keyframes blink {
   50% {
-    border-color: transparent
+    border-color: transparent;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -215,95 +141,83 @@
 
 @media only screen and (max-width: 600px) {
   .wrapper {
-    /* height: 100vh; */
-    /*This part is important for centering*/
     display: grid;
     place-items: center;
   }
-  
+
   .typing-hello {
     width: 22vw;
-    animation: typing 2s steps(22), blink .5s  step-end infinite alternate;
+    animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     font-family: monospace;
     font-size: 2em;
   }
-  
+
   @keyframes typing {
     from {
       border-right: 3px solid;
-        width: 0
-      }
-      to{
+      width: 0;
+    }
+    to {
       border-right: 0px solid;
-      }
-  }
-      
-  @keyframes blink {
-    50% {
-      border-color: transparent
     }
   }
-  
-  
-  
-  
-  
-  
-  
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+
   .typing {
     width: 37vw;
-    animation: typingDem 4s steps(22), blink .5s step-end infinite alternate ;
+    animation: typingDem 4s steps(22), blink 0.5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     font-family: monospace;
     font-size: 2em;
   }
-  
+
   @keyframes typingDem {
     from {
       border-right: 3px solid;
-        width: 0
-      }
-      to{
+      width: 0;
+    }
+    to {
       border-right: 0px solid;
-      }
-  }
-      
-  @keyframes blink {
-    50% {
-      border-color: transparent
     }
   }
-  
-  
-  
-  
-  
-  
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+
   .typing-developer {
     width: 78vw;
-    animation: typingDeveloper 6s steps(26), blink .5s step-end infinite alternate;
+    animation: typingDeveloper 6s steps(26),
+      blink 0.5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     font-family: monospace;
     font-size: 2em;
   }
-  
+
   @keyframes typingDeveloper {
     from {
-    border-right: 3px solid;
-      width: 0
+      border-right: 3px solid;
+      width: 0;
     }
-    to{
-    border-right: 0px solid;
+    to {
+      border-right: 0px solid;
     }
   }
-      
+
   @keyframes blink {
     50% {
-      border-color: transparent
+      border-color: transparent;
     }
   }
 }

@@ -6,11 +6,13 @@ function Home() {
   return (
     <div className="home">
       <div className="wrapper">
-        <h1 className="typing-hello">Hello,</h1>
-        <h1 className="typing">I'm Eldad,</h1>
-        <h1 className="typing-developer">
-Full Stack Developer.
-</h1>
+        <h1 className="typing-hello">
+          Hello,
+        </h1>
+        <h1 id="tit2" className="typing">
+          I'm Eldad,
+        </h1>
+        <h1 className="typing-developer">Full Stack Developer.</h1>
       </div>
       <Link style={{ textDecoration: "none" }} to="/Contact">
         <Button style={{ color: "white" }} className="contact-btn">
