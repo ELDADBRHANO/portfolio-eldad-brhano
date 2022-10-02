@@ -2,6 +2,9 @@ import "./Home.css";
 import React from "react";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
+import eldad from '../../../images/ironman.png'
+import { Box } from "@mui/material";
+
 function Home() {
   return (
     <div className="home">
@@ -16,12 +19,36 @@ function Home() {
         <h1 className="typing-developer">Full Stack Developer.</h1>
       </div>
       </div>
+      <div>
+        <Box className="ironManFlying"
+            id="ironMan"
+            component="img"
+            alt="Eldad's protfolio."
+            src={eldad}
+            sx={{
+              height: 500,
+              width: 200,
+              maxHeight: { xs: 233, md: 167 },
+              maxWidth: { xs: 350, md: 250 },
+              // animation: "spin 2s linear infinite",
+              // "@keyframes spin": {
+              //   "0%": {
+              //     transform: "rotate(0deg)",
+              //   },
+              //   "100%": {
+              //     transform: "rotate(360deg)",
+              //   },
+              // },
+            }}
+          />
+      </div>
       
-      <Link style={{ textDecoration: "none" }} to="/Contact">
+        <Link style={{ textDecoration: "none" }} to="/Contact">
         <Button style={{ color: "white" }} className="contact-btn">
           Contact
         </Button>
       </Link>
+   
     </div>
   );
 }

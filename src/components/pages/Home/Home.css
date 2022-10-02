@@ -5,7 +5,6 @@
   animation-duration: 4s;
 }
 
-
 #contact-btn {
   background-color: #1c87c9;
   -webkit-border-radius: 60px;
@@ -38,7 +37,6 @@
   }
 }
 
-
 .wrapper {
   display: grid;
   place-items: stretch legacy;
@@ -46,7 +44,7 @@
 
 .typing-hello {
   width: 13vw;
-  animation: typing 2s  , blink 0.5s step-end infinite alternate;
+  animation: typing 2s, blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   font-family: monospace;
@@ -71,7 +69,7 @@
 
 .typing {
   width: 30vw;
-  animation: typingDem 4s , blink 0.5s step-end infinite alternate;
+  animation: typingDem 4s, blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   font-family: monospace;
@@ -96,8 +94,7 @@
 
 .typing-developer {
   width: 47vw;
-  animation: typingDeveloper 6s ,
-    blink 0.5s step-end infinite alternate;
+  animation: typingDeveloper 6s, blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   font-family: monospace;
@@ -120,26 +117,6 @@
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media only screen and (max-width: 600px) {
   .wrapper {
     display: grid;
@@ -148,7 +125,7 @@
 
   .typing-hello {
     width: 22vw;
-    animation: typing 2s , blink 0.5s step-end infinite alternate;
+    animation: typing 2s, blink 0.5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     font-family: monospace;
@@ -173,7 +150,7 @@
 
   .typing {
     width: 37vw;
-    animation: typingDem 4s , blink 0.5s step-end infinite alternate;
+    animation: typingDem 4s, blink 0.5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     font-family: monospace;
@@ -198,8 +175,7 @@
 
   .typing-developer {
     width: 78vw;
-    animation: typingDeveloper 6s steps(26),
-      blink 0.5s step-end infinite alternate;
+    animation: typingDeveloper 6s, blink 0.5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     font-family: monospace;
@@ -220,5 +196,36 @@
     50% {
       border-color: transparent;
     }
+  }
+}
+
+.ironManFlying {
+  animation: fly 15s linear infinite;
+  z-index: 999;
+	left: calc(50% - 50px);
+	box-shadow: 0 30px 15px 13px rgb(230, 178, 7);
+	border-radius: 0 0 50% 50%;
+}
+@keyframes fly {
+  0% {
+    transform: translate(0);
+    opacity: 0.5;
+    /* transform: rotate(0deg), */
+  }
+  50% {
+    transform: translate( 0);
+    /* transform: rotate(90deg); */
+    opacity: 1;
+  }
+  75% {
+    transform: translate( 0);
+    /* transform: rotate(180deg); */
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0);
+    /* transform: rotate(360deg); */
+    opacity: 0.5;
+
   }
 }
