@@ -41,12 +41,12 @@
 
 .wrapper {
   display: grid;
-  place-items: center;
+  place-items: stretch legacy;
 }
 
 .typing-hello {
   width: 13vw;
-  animation: typing 2s steps(22) , blink 0.5s step-end infinite alternate;
+  animation: typing 2s  , blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   font-family: monospace;
@@ -71,7 +71,7 @@
 
 .typing {
   width: 30vw;
-  animation: typingDem 4s steps(22), blink 0.5s step-end infinite alternate;
+  animation: typingDem 4s , blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   font-family: monospace;
@@ -96,7 +96,7 @@
 
 .typing-developer {
   width: 47vw;
-  animation: typingDeveloper 6s steps(26),
+  animation: typingDeveloper 6s ,
     blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
@@ -139,6 +139,7 @@
 
 
 
+
 @media only screen and (max-width: 600px) {
   .wrapper {
     display: grid;
@@ -147,7 +148,7 @@
 
   .typing-hello {
     width: 22vw;
-    animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+    animation: typing 2s , blink 0.5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     font-family: monospace;
@@ -172,7 +173,7 @@
 
   .typing {
     width: 37vw;
-    animation: typingDem 4s steps(22), blink 0.5s step-end infinite alternate;
+    animation: typingDem 4s , blink 0.5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     font-family: monospace;

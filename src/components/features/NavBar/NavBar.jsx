@@ -8,7 +8,6 @@ import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
 import { useState } from "react";
 import logo from "../../../images/logo-modified.png";
 
@@ -29,7 +28,7 @@ function NavBar() {
   const pages = ["Home", "About", "Contact"];
 
   return (
-    <AppBar style={{ background: "rgba(0, 0, 0, 0.904)" }} position="static">
+    <AppBar  style={{ background: "rgba(0, 0, 0, 0.904)" }} position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -49,7 +48,7 @@ function NavBar() {
           ></Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-            <IconButton
+            <IconButton 
               size="large"
               aria-label="account of current user"
               aria-controls="menu-appbar"
@@ -78,8 +77,8 @@ function NavBar() {
               }}
             >
               {pages.map((pagePath) => (
-                <Link style={{ textDecoration: "none" }} to={pagePath}>
-                  <ButtonFeatures
+                <Link style={{ textDecoration: "none"}} to={pagePath}>
+                  <ButtonFeatures 
                     btnTxt={pagePath}
                     className="navBarBtn"
                     variant="text"
@@ -94,7 +93,7 @@ function NavBar() {
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((pagePath) => (
                 <Link style={{ textDecoration: "none" }} to={pagePath}>
-                  <ButtonFeatures
+                  <ButtonFeatures style={{ textDecoration: "none"}}
                     btnTxt={pagePath}
                     className="navBarBtn"
                     variant="text"
