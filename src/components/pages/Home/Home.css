@@ -203,28 +203,26 @@
   animation: fly 15s linear infinite;
   z-index: 999;
 	left: calc(50% - 50px);
-	box-shadow: 0 30px 15px 13px rgb(230, 178, 7);
-	border-radius: 0 0 50% 50%;
+	box-shadow: 0 10px 20px 20px rgb(230, 178, 7);
+	border-radius: 0 20 50% 50%;
 }
+
 @keyframes fly {
   0% {
-    transform: translate(0);
+    transform: scale(0.9);
     opacity: 0.5;
-    /* transform: rotate(0deg), */
+    
   }
   50% {
-    transform: translate( 0);
-    /* transform: rotate(90deg); */
+    transform: scale(1);
     opacity: 1;
   }
   75% {
-    transform: translate( 0);
-    /* transform: rotate(180deg); */
+    transform: scale(0.9);
     opacity: 1;
   }
   100% {
-    transform: translate(0);
-    /* transform: rotate(360deg); */
+    transform: scale(1);
     opacity: 0.5;
 
   }

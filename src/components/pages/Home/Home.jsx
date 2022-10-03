@@ -1,5 +1,4 @@
 import "./Home.css";
-import React from "react";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
 import eldad from '../../../images/ironman.png'
@@ -19,7 +18,7 @@ function Home() {
         <h1 className="typing-developer">Full Stack Developer.</h1>
       </div>
       </div>
-      <div>
+      <div >
         <Box className="ironManFlying"
             id="ironMan"
             component="img"
