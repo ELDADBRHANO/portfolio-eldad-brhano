@@ -25,7 +25,7 @@ export default function Projects() {
     },
     {
       Title:"E-commerce",
-      Description:"E-commerce site built with react JS, FireBase, you can search for products, to use the site you have to be register.",
+      Description:"E-commerce site built with react JS, FireBase, you can search for products. to use the site you have to be register.",
       img:"https://cdn.searchenginejournal.com/wp-content/uploads/2020/12/ecommerce-mcommerce-featured-image-5fd09a3a5ff2a.png",
       pagesUrl:"",
       githubUrl:"https://github.com/ELDADBRHANO/e-commerce"

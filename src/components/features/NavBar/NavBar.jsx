@@ -28,7 +28,7 @@ function NavBar() {
   const pages = ["Home", "About", "Contact","Projects"];
 
   return (
-    <AppBar  style={{ background: "rgba(0, 0, 0, 0.904)" }} position="static">
+    <AppBar   style={{ background: "rgba(0, 0, 0, 0.000)" }} position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography

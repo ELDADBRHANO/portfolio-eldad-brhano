@@ -1,0 +1,6 @@
+
+.container-about{
+  margin-top: 2rem !important;
+  display: flex !important;
+  justify-content: space-between;
+}

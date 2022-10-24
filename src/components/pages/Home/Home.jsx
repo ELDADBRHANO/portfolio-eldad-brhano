@@ -29,15 +29,6 @@ function Home() {
               width: 200,
               maxHeight: { xs: 233, md: 167 },
               maxWidth: { xs: 350, md: 250 },
-              // animation: "spin 2s linear infinite",
-              // "@keyframes spin": {
-              //   "0%": {
-              //     transform: "rotate(0deg)",
-              //   },
-              //   "100%": {
-              //     transform: "rotate(360deg)",
-              //   },
-              // },
             }}
           />
       </div>
@@ -47,7 +38,6 @@ function Home() {
           Contact
         </Button>
       </Link>
-   
     </div>
   );
 }

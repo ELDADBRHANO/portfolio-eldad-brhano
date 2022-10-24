@@ -1,0 +1,33 @@
+.react-skill{
+  border-bottom: 4px rgb(236, 119, 119) solid;
+  border-radius: 5px;
+  width: 55vw;
+}
+.js-skill{
+  border-bottom: 4px rgba(109, 169, 233, 0.596) solid;
+  border-radius: 5px;
+}
+.node-skill{
+  border-bottom: 4px rgba(161, 189, 22, 0.667) solid;
+  border-radius: 5px;
+  width: 45vw;
+}
+.html-skill{
+  border-bottom: 4px rgb(165, 122, 177) solid;
+  border-radius: 5px;
+}
+.css-skill{
+  border-bottom: 4px rgba(111, 176, 245, 0.326) solid;
+  border-radius: 5px;
+  width: 68vw;
+}
+.db-skill{
+  border-bottom: 4px white solid;
+  border-radius: 5px;
+  width: 61vw;
+}
+
+.grid-skills{
+  padding-bottom: 2rem;
+}
+
