@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import Projects from "./components/features/Projects/Projects";
 import { Home,NotFound,About,Contact } from "./components/pages";
 
 function Routing() {
@@ -8,6 +9,7 @@ function Routing() {
       <Route path="Home" element={<Home />} />
       <Route path="About" element={<About />} />
       <Route path="Contact" element={<Contact />} />
+      <Route path="Projects" element={<Projects />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

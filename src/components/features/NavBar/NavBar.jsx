@@ -25,7 +25,7 @@ function NavBar() {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
-  const pages = ["Home", "About", "Contact"];
+  const pages = ["Home", "About", "Contact","Projects"];
 
   return (
     <AppBar  style={{ background: "rgba(0, 0, 0, 0.904)" }} position="static">

@@ -1,0 +1,10 @@
+.container-projects{
+  margin-top: 2rem !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: space-evenly;
+}
+
+a{
+  text-decoration: none !important;
+}
