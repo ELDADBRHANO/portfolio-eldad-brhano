@@ -12,7 +12,7 @@ export default function Myself() {
             <img className="Eldad-img" src="/images/Eldad.png.jpg" alt="" />
           </Box>
         </Grid>
-        <Grid lg={4} xs={12}>
+        <Grid className="texts" lg={4} xs={12}>
         <Typography id="title-about-me" className="title" variant="h4">
             Little About Me 
           </Typography>
