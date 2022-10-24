@@ -1,5 +1,5 @@
 .react-skill{
-  border-bottom: 4px rgb(236, 119, 119) solid;
+  border-bottom: 4px rgba(231, 228, 5, 0.932) solid;
   border-radius: 5px;
   width: 55vw;
 }
@@ -28,6 +28,10 @@
 }
 
 .grid-skills{
+  padding-left: 5vw;
   padding-bottom: 2rem;
 }
 
+#title-skills{
+  padding-left: 5vh;
+}

@@ -1,4 +1,42 @@
+.title{
+  display: flex !important;
+  justify-content: center;
+  color: #41E9E4 ;
+  background-image: linear-gradient(
+    to right,
+    #f1dc1c,
+    #ede5f381 50%,
+    white
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
 
+
+.title:before{
+  content: '';
+  background: #f1dc1c;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.title:hover {
+ background-position: 0;
+}
+
+.title:hover::before{
+  width: 100%;
+}
 body{
   background-color: rgba(0, 0, 0, 0.904);
   color: white;

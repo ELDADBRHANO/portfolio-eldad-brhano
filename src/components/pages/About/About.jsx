@@ -11,7 +11,7 @@ function About() {
       <Grid lg={12} xs={12}>
         <Myself/>
       </Grid>
-      <Grid lg={12} xs={12}>
+      <Grid lg={10} xs={12}>
       <Skills/>
       </Grid>
       </Grid>

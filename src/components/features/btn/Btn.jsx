@@ -5,6 +5,7 @@ function ButtonFeatures(props) {
     <Button id="btn"
       style={{
         borderRadius: 35,
+        color:'white'
       }}
     >
       {props.btnTxt}

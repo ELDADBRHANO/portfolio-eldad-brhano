@@ -1,16 +1,39 @@
-.title{
-  color: #41E9E4 
-}
 
 .Eldad-img{
-  width: 25vw;
-  height: 45vh;
-  border-radius: 70%;
-}
-.aboutme{
-  line-break: 2;
+  width: 65vw;
+  height: 50vh;
+  border-radius: 1%;
 }
 
 .grid-about-me{
   margin-top: 2rem;
+}
+.aboutme{
+  width: 55vw;
+  padding: 5vw;
+}
+#title-about-me{
+  margin-top: 3vh;
+}
+.box-img{
+  display: flex;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 650px) {
+
+  .Eldad-img{
+    width: 100vw;
+    height: 30vh;
+  border-radius: 1%;
+  }
+  
+  
+  .grid-about-me{
+    margin-top: 2rem;
+  }
+  .aboutme{
+    width: 100vw;
+    padding: 5vw;
+  }
+  
 }
