@@ -14,19 +14,19 @@ import logo from "../../../images/logo-modified.png";
 function NavBar() {
   const [anchorElNav, setAnchorElNav] = useState(null);
   const [anchorElUser, setAnchorElUser] = useState(null);
-
+  
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
-
+  
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
+  
   const pages = ["Home", "About", "Contact","Projects"];
-
   return (
     <AppBar   style={{ background: "rgba(0, 0, 0, 0.000)" }} position="static">
       <Container maxWidth="xl">
@@ -47,7 +47,7 @@ function NavBar() {
             }}
           ></Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          <Box  sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton 
               size="large"
               aria-label="account of current user"
@@ -77,8 +77,8 @@ function NavBar() {
               }}
             >
               {pages.map((pagePath) => (
-                <Link style={{ textDecoration: "none"}} to={pagePath}>
-                  <ButtonFeatures 
+                <Link style={{ textDecoration: "none" }} to={pagePath}>
+                  <ButtonFeatures style={{ textDecoration: "none"}}
                     btnTxt={pagePath}
                     className="navBarBtn"
                     variant="text"

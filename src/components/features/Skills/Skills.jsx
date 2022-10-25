@@ -7,6 +7,7 @@ function Skills() {
   return (
     <Container>
       <Grid container spacing={2}>
+        
       <Typography variant="h3">
         <blockquote id='title-skills' className='title'>
           My Skills

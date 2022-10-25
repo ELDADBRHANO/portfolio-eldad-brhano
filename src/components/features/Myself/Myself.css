@@ -1,6 +1,8 @@
 
 .Eldad-img{
-  width: 65vw;
+  padding-left: 2rem;
+  padding-top: 2rem;
+  width: 50vw;
   height: 50vh;
   border-radius: 1%;
 }
@@ -9,7 +11,7 @@
   margin-top: 2rem;
 }
 .aboutme{
-  width: 55vw;
+  /* width: 50vw;/ */
   padding: 5vw;
 }
 #title-about-me{
