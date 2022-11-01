@@ -5,7 +5,12 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import { Container } from "@mui/material";
+
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
 
 export default function Projects() {
   const project = [
@@ -32,36 +37,78 @@ export default function Projects() {
     },
 ]
   return (
-    <Container className="container-projects">    
+    <Swiper
+    spaceBetween={35}
+    slidesPerView={3}
+    onSlideChange={() => console.log('slide change')}
+    onSwiper={(swiper) => console.log(swiper)}
+  >
+    
     {
-      project.map((item,i)=>
-      <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        component="img"
-        alt="NBA"
-        height="140"
-        image={item.img}
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          {item.Title}
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-         {item.Description}
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <a target="_blank" rel="noreferrer" href="https://eldadbrhano.github.io/NBA-project/">
-        <Button size="small">View</Button>
-        </a>
-        <a  target="_blank" rel="noreferrer" href="https://github.com/ELDADBRHANO/NBA-project">
-        <Button size="small">Github</Button>
-        </a>
-      </CardActions>
-    </Card>
+      project.map((item)=>
+      <SwiperSlide>
+         <Card sx={{ maxWidth: 345 }}>
+       <CardMedia
+         component="img"
+         alt="NBA"
+         height="140"
+         image={item.img}
+         id="CardMedia"
+       />
+       <CardContent   className="cardBody">
+         <Typography id="item-title" gutterBottom variant="h6" component="container">
+           {item.Title}
+         </Typography>
+         <Typography variant="body2" color="text.secondary">
+          {item.Description}
+         </Typography>
+       </CardContent>
+       <CardActions id="CardActions">
+         <a target="_blank" rel="noreferrer" href="https://eldadbrhano.github.io/NBA-project/">
+         <Button size="small">View</Button>
+         </a>
+         <a  target="_blank" rel="noreferrer" href="https://github.com/ELDADBRHANO/NBA-project">
+         <Button size="small">Github</Button>
+         </a>
+       </CardActions>
+     </Card>
+      </SwiperSlide>
       )
     }
+    ...
+  </Swiper>
     
-    </Container>
+    // <Container className="container-projects">    
+    // {
+    //   project.map((item,i)=>
+    //   <Card sx={{ maxWidth: 345 }}>
+    //   <CardMedia
+    //     component="img"
+    //     alt="NBA"
+    //     height="140"
+    //     image={item.img}
+    //     id="CardMedia"
+    //   />
+    //   <CardContent className="cardBody">
+    //     <Typography gutterBottom variant="h5" component="div">
+    //       {item.Title}
+    //     </Typography>
+    //     <Typography variant="body2" color="text.secondary">
+    //      {item.Description}
+    //     </Typography>
+    //   </CardContent>
+    //   <CardActions>
+    //     <a target="_blank" rel="noreferrer" href="https://eldadbrhano.github.io/NBA-project/">
+    //     <Button size="small">View</Button>
+    //     </a>
+    //     <a  target="_blank" rel="noreferrer" href="https://github.com/ELDADBRHANO/NBA-project">
+    //     <Button size="small">Github</Button>
+    //     </a>
+    //   </CardActions>
+    // </Card>
+    //   )
+    // }
+    
+    // </Container>
   );
 }

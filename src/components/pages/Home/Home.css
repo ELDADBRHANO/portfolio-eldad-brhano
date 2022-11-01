@@ -1,102 +1,108 @@
-.eldad-present {
-  display: flex;
-  padding: 3.5rem;
-  animation-name: example;
-  animation-duration: 4s;
-}
-.wrapper {
-  display: grid;
-  place-items: stretch legacy;
-}
-
-.typing-hello {
-  width: 13vw;
-  animation: typing 2s, blink 0.5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  font-family: monospace;
-  font-size: 2em;
-}
-
-@keyframes typing {
-  from {
-    border-right: 3px solid;
-    width: 0;
+@media only screen and (min-width: 600px) {
+  .eldad-present {
+    display: flex;
+    padding: 3.5rem;
+    animation-name: example;
+    animation-duration: 4s;
   }
-  to {
-    border-right: 0px solid;
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
-
-.typing {
-  width: 30vw;
-  animation: typingDem 4s, blink 0.5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  font-family: monospace;
-  font-size: 2em;
-}
-
-@keyframes typingDem {
-  from {
-    border-right: 3px solid;
-    width: 0;
-  }
-  to {
-    border-right: 0px solid;
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
-
-.typing-developer {
-  width: 47vw;
-  animation: typingDeveloper 6s, blink 0.5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  font-family: monospace;
-  font-size: 2em;
-}
-
-@keyframes typingDeveloper {
-  from {
-    border-right: 3px solid;
-    width: 0;
-  }
-  to {
-    border-right: 0px solid;
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
-
-@media only screen and (max-width: 600px) {
   .wrapper {
     display: grid;
-    place-items: center;
+    place-items: stretch legacy;
   }
-
+  
   .typing-hello {
-    width: 22vw;
+    width: 13vw;
     animation: typing 2s, blink 0.5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     font-family: monospace;
     font-size: 2em;
+  }
+  
+  @keyframes typing {
+    from {
+      border-right: 3px solid;
+      width: 0;
+    }
+    to {
+      border-right: 0px solid;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  .typing {
+    width: 30vw;
+    animation: typingDem 4s, blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typingDem {
+    from {
+      border-right: 3px solid;
+      width: 0;
+    }
+    to {
+      border-right: 0px solid;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  .typing-developer {
+    width: 47vw;
+    animation: typingDeveloper 6s, blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typingDeveloper {
+    from {
+      border-right: 3px solid;
+      width: 0;
+    }
+    to {
+      border-right: 0px solid;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    /* padding-left: 15vw; */
+  }
+
+  .typing-hello {
+    width: 40vw;
+    animation: typing 2s, blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: xx-large;
   }
 
   @keyframes typing {
@@ -116,12 +122,12 @@
   }
 
   .typing {
-    width: 37vw;
+    width: 73vw;
     animation: typingDem 4s, blink 0.5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     font-family: monospace;
-    font-size: 2em;
+    font-size: xx-large;
   }
 
   @keyframes typingDem {
@@ -141,12 +147,12 @@
   }
 
   .typing-developer {
-    width: 78vw;
+    width: 100vw;
     animation: typingDeveloper 6s, blink 0.5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     font-family: monospace;
-    font-size: 2em;
+    font-size: xx-large;
   }
 
   @keyframes typingDeveloper {

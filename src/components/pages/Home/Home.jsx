@@ -21,11 +21,6 @@ function Home() {
       <IronMan/>
       </Container>
       </div>   
-        {/* <Link style={{ textDecoration: "none" }} to="/Contact">
-        <Button style={{ color: "white" }} className="contact-btn">
-          Contact
-        </Button>
-      </Link> */}
     </div>
   );
 }

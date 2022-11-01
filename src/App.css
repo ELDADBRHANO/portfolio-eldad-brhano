@@ -1,3 +1,4 @@
+
 .title{
   display: flex !important;
   justify-content: center;
@@ -19,7 +20,6 @@
 
 
 .title:before{
-  content: '';
   background: #f1dc1c;
   display: block;
   position: absolute;
@@ -37,10 +37,10 @@
 .title:hover::before{
   width: 100%;
 }
+
 body{
   background-color: rgba(0, 0, 0, 0.904);
   color: white;
-
 }
 .App {
   text-align: center;
