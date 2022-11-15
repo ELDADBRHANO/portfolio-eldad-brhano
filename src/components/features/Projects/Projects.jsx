@@ -55,7 +55,7 @@ export default function Projects() {
          image={item.img}
          id="CardMedia"
        />
-       <CardContent   className="cardBody">
+       <CardContent className="cardBody">
          <Typography id="item-title" gutterBottom variant="h6" component="container">
            {item.Title}
          </Typography>
