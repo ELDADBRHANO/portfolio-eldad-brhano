@@ -35,6 +35,13 @@ export default function Projects() {
       pagesUrl:"",
       githubUrl:"https://github.com/ELDADBRHANO/e-commerce"
     },
+    {
+      Title:"Fight-Game",
+      Description:"Fight Game built with Canvas & HTML, JS. In the url you can found instructions.",
+      img:"https://i.ytimg.com/vi/vyqbNFMDRGQ/maxresdefault.jpg",
+      pagesUrl:"https://eldadbrhano-fight-game.netlify.app/",
+      githubUrl:"https://github.com/ELDADBRHANO/Fight-Game"
+    },
 ]
   return (
     <Swiper
@@ -64,10 +71,10 @@ export default function Projects() {
          </Typography>
        </CardContent>
        <CardActions id="CardActions">
-         <a target="_blank" rel="noreferrer" href="https://eldadbrhano.github.io/NBA-project/">
+         <a target="_blank" rel="noreferrer" href={item.pagesUrl}>
          <Button size="small">View</Button>
          </a>
-         <a  target="_blank" rel="noreferrer" href="https://github.com/ELDADBRHANO/NBA-project">
+         <a  target="_blank" rel="noreferrer" href={item.githubUrl}>
          <Button size="small">Github</Button>
          </a>
        </CardActions>
@@ -75,7 +82,7 @@ export default function Projects() {
       </SwiperSlide>
       )
     }
-    ...
+    <blockquote>Slide to view more!</blockquote>
   </Swiper>
     
     // <Container className="container-projects">    

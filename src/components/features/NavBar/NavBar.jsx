@@ -61,7 +61,7 @@ return(
 
     {menuItems.map(menu=>(
           <div className="content">
-          <div className="content-header" id={menu.name}>{menu.titlt}</div>
+          <Container className="content-header" id={menu.name}>{menu.titlt}</Container>
         </div>
     ))}
 
