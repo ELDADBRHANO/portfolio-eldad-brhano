@@ -1,4 +1,79 @@
-.inputs{
+/* .inputs{
   background-color: aliceblue;
   border-radius: 5%;
+} */
+
+@media only screen and (max-width: 600px) {
+  label {
+    font-weight: bold;
+    display: flex;
+    margin-bottom: 5px;
+  }
+  
+  input[type='text'],
+  input[type='email'],
+  textarea {
+    display: block;
+    width: 400px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    /* margin-bottom: 20px; */
+  }
+  
+  .form-control {
+    margin-bottom: 20px;
+  }
+  
+  .error {
+    color: red;
+  }
+}
+@media only screen and (min-width: 600px) {
+  #formm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+  .form_fontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  label {
+    font-weight: bold;
+    display: flex;
+    margin-bottom: 5px;
+  }
+  
+  input[type='text'],
+  input[type='email'],
+  textarea {
+    display: block;
+    width: 400px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    /* margin-bottom: 20px; */
+  }
+  
+  .form-control {
+    margin-bottom: 20px;
+  }
+  
+  .error {
+    color: red;
+  }
 }

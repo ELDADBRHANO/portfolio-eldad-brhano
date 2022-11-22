@@ -8,6 +8,7 @@
     "@mui/icons-material": "^5.10.6",
     "@mui/material": "^5.10.11",
     "cra-template": "1.2.0",
+    "formik": "^2.2.9",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",

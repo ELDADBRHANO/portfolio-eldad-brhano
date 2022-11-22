@@ -47,8 +47,6 @@ export default function Projects() {
     <Swiper
     spaceBetween={35}
     slidesPerView={3}
-    onSlideChange={() => console.log('slide change')}
-    onSwiper={(swiper) => console.log(swiper)}
   >
     
     {

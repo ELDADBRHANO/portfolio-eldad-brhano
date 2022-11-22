@@ -39,24 +39,26 @@
   }
   
   .content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
     height: 100vh;
     /* background-color: crimson; */
-    margin: 10vh;
-    margin-bottom: 30vh;
+    margin-top: 10vh;
     border-radius: 30px;
   }
   
   .content-header {
-    width: 100vw;
+    /* width: 100vw; */
     color: white;
     text-transform: capitalize;
   }
   
   #btn-nav:hover{
     opacity: 0.5;
+  }
+  #contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -98,7 +100,23 @@
     
   }
   #Projects{
+    height: 100vh;
+    padding-top: 40vh;
+
    width: 100vw;
+  }
+  #Home{
+    height: 100vh;
+    width: 100vw; 
+  }
+  #About{
+    height: 100vh;
+    padding-top: 40vh;
+    width: 100vw; 
+  }
+  #Contact{
+    height: 80vh;
+    width: 100vw; 
   }
   #main-navbar{
    width: 100vw;
@@ -113,5 +131,9 @@
     justify-content: center;
     padding-left: 15%;
     width: 100vw;
+    height: 100vh;
+  }
+  .home{
+    height: 100vh;
   }
 }

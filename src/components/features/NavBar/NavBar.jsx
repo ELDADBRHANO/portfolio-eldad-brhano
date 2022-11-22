@@ -47,7 +47,7 @@ return(
     <ul>
       {menuItems.map((menu)=>(
         <li>
-          <Link to={menu.name} smooth={true} offset={-150} duration={500}>
+          <Link to={menu.name} smooth={true} offset={-20} duration={500}>
             <Button id="btn-nav" color="inherit">
             {menu.name}
             </Button>
@@ -60,9 +60,9 @@ return(
   <main id="main-navbar">
 
     {menuItems.map(menu=>(
-          <div className="content">
-          <Container className="content-header" id={menu.name}>{menu.titlt}</Container>
-        </div>
+          <Container className="content">
+          <div className="content-header" id={menu.name}>{menu.titlt}</div>
+        </Container>
     ))}
 
   </main>
