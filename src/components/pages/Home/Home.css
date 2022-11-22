@@ -1,135 +1,108 @@
-.eldad-present {
-  display: flex;
-  padding: 3.5rem;
-  animation-name: example;
-  animation-duration: 4s;
-}
-
-#contact-btn {
-  background-color: #1c87c9;
-  -webkit-border-radius: 60px;
-  border-radius: 60px;
-  border: none;
-  color: #eeeeee;
-  cursor: pointer;
-  display: inline-block;
-  font-family: sans-serif;
-  font-size: 20px;
-  padding: 5px 15px;
-  text-align: center;
-  text-decoration: none;
-}
-.contact-btn {
-  animation: glowing 1300ms infinite;
-}
-@keyframes glowing {
-  0% {
-    background-color: #2ba805;
-    box-shadow: 0 0 5px #2ba805;
+@media only screen and (min-width: 600px) {
+  .eldad-present {
+    display: flex;
+    padding: 3.5rem;
+    animation-name: example;
+    animation-duration: 4s;
   }
-  50% {
-    background-color: #49e819;
-    box-shadow: 0 0 20px #49e819;
-  }
-  100% {
-    background-color: #2ba805;
-    box-shadow: 0 0 5px #2ba805;
-  }
-}
-
-.wrapper {
-  display: grid;
-  place-items: stretch legacy;
-}
-
-.typing-hello {
-  width: 13vw;
-  animation: typing 2s, blink 0.5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  font-family: monospace;
-  font-size: 2em;
-}
-
-@keyframes typing {
-  from {
-    border-right: 3px solid;
-    width: 0;
-  }
-  to {
-    border-right: 0px solid;
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
-
-.typing {
-  width: 30vw;
-  animation: typingDem 4s, blink 0.5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  font-family: monospace;
-  font-size: 2em;
-}
-
-@keyframes typingDem {
-  from {
-    border-right: 3px solid;
-    width: 0;
-  }
-  to {
-    border-right: 0px solid;
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
-
-.typing-developer {
-  width: 47vw;
-  animation: typingDeveloper 6s, blink 0.5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  font-family: monospace;
-  font-size: 2em;
-}
-
-@keyframes typingDeveloper {
-  from {
-    border-right: 3px solid;
-    width: 0;
-  }
-  to {
-    border-right: 0px solid;
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
-
-@media only screen and (max-width: 600px) {
   .wrapper {
     display: grid;
-    place-items: center;
+    place-items: stretch legacy;
   }
-
+  
   .typing-hello {
-    width: 22vw;
+    width: 13vw;
     animation: typing 2s, blink 0.5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     font-family: monospace;
     font-size: 2em;
+  }
+  
+  @keyframes typing {
+    from {
+      border-right: 3px solid;
+      width: 0;
+    }
+    to {
+      border-right: 0px solid;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  .typing {
+    width: 30vw;
+    animation: typingDem 4s, blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typingDem {
+    from {
+      border-right: 3px solid;
+      width: 0;
+    }
+    to {
+      border-right: 0px solid;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  .typing-developer {
+    width: 47vw;
+    animation: typingDeveloper 6s, blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: 2em;
+  }
+  
+  @keyframes typingDeveloper {
+    from {
+      border-right: 3px solid;
+      width: 0;
+    }
+    to {
+      border-right: 0px solid;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    /* padding-left: 15vw; */
+  }
+
+  .typing-hello {
+    width: 40vw;
+    animation: typing 2s, blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: xx-large;
   }
 
   @keyframes typing {
@@ -149,12 +122,12 @@
   }
 
   .typing {
-    width: 37vw;
+    width: 73vw;
     animation: typingDem 4s, blink 0.5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     font-family: monospace;
-    font-size: 2em;
+    font-size: xx-large;
   }
 
   @keyframes typingDem {
@@ -174,12 +147,12 @@
   }
 
   .typing-developer {
-    width: 78vw;
+    width: 100vw;
     animation: typingDeveloper 6s, blink 0.5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     font-family: monospace;
-    font-size: 2em;
+    font-size: xx-large;
   }
 
   @keyframes typingDeveloper {
@@ -199,31 +172,4 @@
   }
 }
 
-.ironManFlying {
-  animation: fly 15s linear infinite;
-  z-index: 999;
-	left: calc(50% - 50px);
-	box-shadow: 0 10px 20px 20px rgb(230, 178, 7);
-	border-radius: 0 20 50% 50%;
-}
 
-@keyframes fly {
-  0% {
-    transform: scale(0.9);
-    opacity: 0.5;
-    
-  }
-  50% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  75% {
-    transform: scale(0.9);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 0.5;
-
-  }
-}

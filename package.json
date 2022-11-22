@@ -3,16 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@emotion/react": "^11.10.4",
-    "@emotion/styled": "^11.10.4",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
     "@mui/icons-material": "^5.10.6",
-    "@mui/material": "^5.10.7",
+    "@mui/material": "^5.10.11",
     "cra-template": "1.2.0",
+    "formik": "^2.2.9",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.6.0",
+    "react-loaders": "^3.0.1",
+    "react-particles": "^2.5.3",
     "react-router-dom": "^6.4.0",
     "react-scripts": "5.0.1",
-    "styled-components": "^5.3.5"
+    "react-scroll": "^1.8.8",
+    "styled-components": "^5.3.5",
+    "swiper": "^8.4.4",
+    "tsparticles": "^2.5.3"
   },
   "scripts": {
     "start": "react-scripts start",

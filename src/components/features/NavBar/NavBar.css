@@ -1,5 +1,139 @@
+@media only screen and (min-width: 600px) {
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-.nav-bar{
-  display: flex;
+  .nav-bar{
+    display: flex;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 5px;
+    margin-left:10vh ;
+  }
+  
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+  
+    list-style: none;
+    font-weight: bold;
+  }
+  
+  li {
+    cursor: pointer;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+  }
+  
+  .content {
+
+    height: 100vh;
+    /* background-color: crimson; */
+    margin-top: 10vh;
+    border-radius: 30px;
+  }
+  
+  .content-header {
+    /* width: 100vw; */
+    color: white;
+    text-transform: capitalize;
+  }
+  
+  #btn-nav:hover{
+    opacity: 0.5;
+  }
+  #contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
+
+
+@media only screen and (max-width: 600px) {
+
+  .nav-bar{
+    display: flex;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 5px;
+    margin-left:10vh ;
+  }
+  
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* width: 50%; */
+  
+    list-style: none;
+    font-weight: bold;
+  }
+  
+
+  a {
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+  }
+  .content{
+    width: 100vw;
+    
+  }
+  #Projects{
+    height: 100vh;
+    padding-top: 40vh;
+
+   width: 100vw;
+  }
+  #Home{
+    height: 100vh;
+    width: 100vw; 
+  }
+  #About{
+    height: 100vh;
+    padding-top: 40vh;
+    width: 100vw; 
+  }
+  #Contact{
+    height: 80vh;
+    width: 100vw; 
+  }
+  #main-navbar{
+   width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .content-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 15%;
+    width: 100vw;
+    height: 100vh;
+  }
+  .home{
+    height: 100vh;
+  }
+}
