@@ -5,5 +5,7 @@
     
     Hope you enjoy watching it :)
   </p>
+  
+  <a href="https://eldad-brhano-portfolio.netlify.app/">Click here to view my portfolio.</a>
 </div>
 
