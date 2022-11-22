@@ -1,17 +1,5 @@
 import { Link } from "react-scroll";
-// import { Link } from "react-router-dom";
-import ButtonFeatures from "../btn/Btn";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import { useState } from "react";
-import logo from "../../../images/logo-modified.png";
-import { menuUnstyledClasses } from "@mui/base";
 import './NavBar.css'
 import Home from "../../pages/Home/Home";
 import { About } from "../../pages";
@@ -47,7 +35,7 @@ return(
     <ul>
       {menuItems.map((menu)=>(
         <li>
-          <Link to={menu.name} smooth={true} offset={-20} duration={500}>
+          <Link to={menu.name} smooth={true} offset={-80} duration={500}>
             <Button id="btn-nav" color="inherit">
             {menu.name}
             </Button>
